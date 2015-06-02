@@ -31,7 +31,8 @@ alias todo='emacs -nw ~/g/org/todo.org' # TODO get org-mode agenda working
 
 
 ### PROMPT ### 
-PS1='[\u@\h ${PWD}]\$ '
+PS1='\[\e[0;37m\]\u\[\e[m\]\[\e[0;37m\]:\[\e[m\]\[\e[0;33m\]\w\[\e[m\]\[\e[0;37m\]\$\[\e[m\] \[\e[1;37m\]'
+# PS1='[\u@\h \w\]\$ '
 
 # Virtualenvwrapper startup
 export WORKON_HOME=$HOME/.venvs

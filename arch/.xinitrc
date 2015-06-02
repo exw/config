@@ -11,11 +11,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+## Startup Programs
 /usr/bin/gnome-terminal &
-emacs ~/g/org/quotas.org &
-alias emacs='emacs -nw'
-# firefox &
+#emacs ~/g/org/quotas.org &
+# alias emacs='emacs -nw'
+firefox &
 xmobar &
+##
 
 # exec gnome-session
 # exec startkde
