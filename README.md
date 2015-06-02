@@ -1,6 +1,9 @@
 # config
 
-For porting stuff around my boxes:
+Miscellaneous configuration files:
 
-.vimrc
-ssh authorized_keys
+{ .vimrc
+, ssh authorized_keys
+, .xmobarrc
+, .xinitrc
+}
