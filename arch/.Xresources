@@ -1,0 +1,58 @@
+Emacs*geometry: 90x44
+
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+URxvt*scrollBar_right: true
+URxvt.font: xft:terminus
+
+URxvt*foreground: white
+URxvt*background: black
+
+*color0:  #2E3436
+*color1:  #a40000
+*color2:  #4E9A06
+*color3:  #C4A000
+*color4:  #3465A4
+*color5:  #75507B
+*color6:  #ce5c00
+*color7:  #babdb9
+*color8:  #555753
+*color9:  #EF2929
+*color10: #8AE234
+*color11: #FCE94F
+*color12: #729FCF
+*color13: #AD7FA8
+*color14: #fcaf3e
+*color15: #EEEEEC
+
+! config from thedarnedestthing.com/urxvt
+URxvt*buffered:               true            ! double buffer for xtf
+URxvt*hold:                   false           ! kill window on shell exit
+URxvt*loginShell:             true            ! to load shell profiles
+URxvt*print-pipe:             cat > $HOME/.urxvt/$(echo urxvt.dump.$(date +'%s'))
+URxvt*saveLines:              9999            ! non-tmux window scroll back
+! Text
+URxvt*colorUL:                yellow
+! URxvt*lineSpace:              4               ! pixels between lines for added readability
+URxvt*underlineColor:         yellow
+! UI
+URxvt*fading:                 15               ! % brightness reduction on focus loss
+URxvt*mapAlert:               true            ! de-iconify on bell alert
+URxvt*scrollBar:              false           ! maximize usable line width
+URxvt*shading:                40              ! darken background transparency 60%
+URxvt*transparent:            true
+URxvt*visualBell:             false           ! blink window on bell
+! Scrolling
+URxvt*scrollTtyKeypress:      true            ! scroll to bottom on keypress
+URxvt*scrollTtyOutput:        false           ! do not scroll to bottom on output
+URxvt*scrollWithBuffer:       false           ! do not use scrollback buffer
+URxvt*skipScroll:             true            ! favour scroll speed over listing all lines
+! Enable left mouse click url launcher
+URxvt*matcher.button:         1
+URxvt*perl-ext:
+URxvt*perl-ext-common:        default,matcher
+URxvt*url-launcher:           firefox
