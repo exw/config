@@ -11,14 +11,26 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-## Startup Programs
-/usr/bin/gnome-terminal &
-#emacs ~/g/org/quotas.org &
-# alias emacs='emacs -nw'
-firefox &
+## Startup Programs ##
+
+# emacs ~/g/org/quotas.org &
+xrdb -merge ~/.Xresources # urxvt config
+urxvt &
+# /usr/bin/gnome-terminal &
 xmobar &
+unclutter & # hide the mouse
+
+##
+# 2015-05-31
+# Django project initialization
+# /usr/bin/gnome-terminal -e ~/bin/packtServer.sh &
+urxvt -e ~/bin/packtServer.sh &
 ##
 
+# vimperator
+firefox &
+
+# startup
 # exec gnome-session
 # exec startkde
 # exec startxfce4
