@@ -7,7 +7,9 @@ URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
 URxvt*scrollBar_right: true
-URxvt.font: xft:terminus
+!terminus, inconsolata
+URxvt.font: xft:inconsolata
+
 
 URxvt*foreground: white
 URxvt*background: black
