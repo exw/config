@@ -15,16 +15,16 @@ fi
 
 # emacs ~/g/org/quotas.org &
 xrdb -merge ~/.Xresources # urxvt config
-urxvt &
-# /usr/bin/gnome-terminal &
+# urxvt &
+/usr/bin/gnome-terminal &
 xmobar &
 unclutter & # hide the mouse
 
 ##
 # 2015-05-31
 # Django project initialization
-# /usr/bin/gnome-terminal -e ~/bin/packtServer.sh &
-urxvt -e ~/bin/packtServer.sh &
+/usr/bin/gnome-terminal -e ~/bin/packtServer.sh &
+# urxvt -e ~/bin/packtServer.sh &
 ##
 
 # vimperator
