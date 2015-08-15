@@ -17,7 +17,7 @@ alias cdp='cd ~/g/django_bookmarks'
 ### BASH ALIASES ###
 alias ls='ls --color=auto'
 alias emacs='emacs -nw' 
-
+alias amixer='gnome-alsamixer'
 
 ### PYTHON ALIASES ###
 alias py='python'
@@ -41,3 +41,6 @@ PS1='\[\e[0;37m\]\u\[\e[m\]\[\e[0;37m\]:\[\e[m\]\[\e[0;33m\]\w\[\e[m\]\[\e[0;37m
 # Virtualenvwrapper startup
 export WORKON_HOME=$HOME/.venvs
 source /usr/bin/virtualenvwrapper_lazy.sh
+
+### EXPORT VARIABLES ###
+export VISUAL="vim"
