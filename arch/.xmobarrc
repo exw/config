@@ -11,7 +11,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%battery% | %multicpu% %thermal0% %thermal1% | %memory% | %dynnetwork% }{ %KORD% || %date%"
+   , template = "%battery% | %multicpu% %thermal0% %thermal1% | %memory% | %dynnetwork% }{ %KBOS% | %default:Master% || %date%"
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -108,6 +108,11 @@ Config {
                                        -- charged status
                                        , "-i"   , "<fc=#006000>Charged</fc>"
                              ] 50
+ 
+        -- volume monitor
+        , Run Volume "default" "Master"
+                             [ "--template" , "<volume>%"
+                             ] 10
 
         -- time and date indicator 
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
