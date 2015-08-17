@@ -1,4 +1,5 @@
 # i3 config file (v4)
+# ~/.i3/config
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
@@ -57,7 +58,7 @@ bindsym $mod+Shift+d exec killall dunst && exec notify-send 'restart dunst'
 bindsym Print exec scrot -e 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Print exec scrot -ue 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
 bindsym $mod+Shift+Print exec notify-send 'selection will be saved in ~/Screenshots' & exec scrot -se 'mv $f ~/Screenshots' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Screenshots'
-bindsym $mod+Shift+z exec qpdfview i3_help.pdf
+bindsym $mod+Shift+z exec qpdfview ~/.i3/i3_help.pdf
 bindsym $mod+Ctrl+x exec xkill
 
 focus_follows_mouse no
