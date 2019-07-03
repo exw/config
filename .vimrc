@@ -5,8 +5,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'sheerun/vim-polyglot'
+Plugin 'ycm-core/YouCompleteMe'
+
+Plugin 'neovimhaskell/haskell-vim'
+
+
+Plugin 'ap/vim-css-color'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'elmcast/elm-vim'
+let g:polyglot_disabled = ['elm']
+
 
 call vundle#end()
 
