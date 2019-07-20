@@ -39,3 +39,8 @@ set smartindent
 syntax on
 
 xn <C-s> :s//g<Left><Left>
+
+
+" [fzf]
+" Space-o ("open") to fuzzy file search, both git- and everything-variants
+nn <expr> <Space>o (len(system('git rev-parse')) ? ':Files' : ':GFiles')."\<CR>"
