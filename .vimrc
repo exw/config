@@ -14,6 +14,11 @@ Plugin 'neovimhaskell/haskell-vim'
 Plugin 'ap/vim-css-color'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elmcast/elm-vim'
+
+set rtp+=~/.fzf
+Plugin 'junegunn/fzf.vim'
+Plugin 'junegunn/fzf'
+
 let g:polyglot_disabled = ['elm']
 
 
@@ -33,3 +38,4 @@ set autoindent
 set smartindent
 syntax on
 
+xn <C-s> :s//g<Left><Left>
