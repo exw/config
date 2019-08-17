@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt install git vim build-essential
 
 # move vimrc to home directory, create backup folder
 cp ./.vimrc ~/.vimrc

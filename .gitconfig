@@ -1,0 +1,8 @@
+[user]
+	email = ewu120@protonmail.com
+[push]
+    default = current
+[pull]
+    rebase = true
+[rebase]
+    autoStash = true
