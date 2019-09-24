@@ -28,6 +28,8 @@ filetype indent on
 " filetype plugin on "To ignore plugin changes
 
 set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+set undodir=~/.vim/backup
 
 set tabstop=4
 set expandtab
