@@ -1,8 +1,20 @@
 [user]
 	email = ewu120@protonmail.com
-[push]
-    default = current
-[pull]
-    rebase = true
-[rebase]
-    autoStash = true
+	name = exw
+[core]
+	excludesfile = /home/exw/.gitignore_global
+[alias]
+  s = status
+  d = diff
+  co = checkout
+  br = branch
+  last = log -1 HEAD
+  cane = commit --amend --no-edit
+  lo = log --oneline -n 10
+  pr = pull --rebase
+  a = add .
+  cm = commit -m
+  rh = reset --hard
+  g = grep -r
+  pf = push -f
+  p = push
