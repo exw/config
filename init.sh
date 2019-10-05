@@ -18,4 +18,5 @@ cp ./.gitignore_global ~/.gitignore_global
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir ~/.vim/backup
+# chown $USER:$USER ~/.vim/backup
 vim +PluginInstall +qall
